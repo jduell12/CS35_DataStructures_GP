@@ -24,11 +24,18 @@ class Node:
             end = end.next
             if end:
                 end = end.next
-                middle = middle.next
+                if end:
+                    middle = middle.next
             
         print('Middle: %d' % (middle.value))
         
+#odd number of values
 #(4) -> (7) -> (9) -> (2) -> (12) 
+# h             m             t
+
+#even number of values
+#(4) -> (7) -> (9) -> (2) -> (12) -> (120)
+# h                m                   t
         
 root = Node(4)
 current_node = root
@@ -39,4 +46,6 @@ current_node = current_node.next
 current_node.add(2)
 current_node = current_node.next
 current_node.add(12)
+current_node = current_node.next
+current_node.add(120)
 root.find_middle()
