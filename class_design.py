@@ -144,6 +144,24 @@ class BTNode:
                 #if none insert the node
                 #else call insert on root's right node 
         pass
+    
+    #returns true if the tree contains the value or false
+    def contains(self, target):
+        #base case
+            #check if root node value is same as target value
+                #return true
+        #left case
+            #check if target < root value
+                #check if there is no child to the left
+                    #return false 
+                #contains(left child, target)
+        #right case 
+            #check if target > root value
+                #check if no child to the right
+                    #return false
+                #contains(right child, target)
+       
+        pass
         
 bt1 = BTNode(10) #root
 
