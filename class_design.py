@@ -113,4 +113,39 @@ Tree from DLL
         (value)
         /     \ 
     (left)    (right)
+    
+BTNode
+init
+add_left
+add_right
 """
+
+class BTNode:
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+        
+    def __add_left__(self, value):
+        self.left = BTNode(value)
+    
+    def __add_right__(self, value):
+        self.right = BTNode(value)
+        
+    def insert(self, value):
+        #left case?
+            #check if value < root value
+            #move to the left and check if it's None
+                #if none insert the node
+                #else call insert on root's left node
+        #right case?
+            #value >= root value
+            #move to right and check if it's None
+                #if none insert the node
+                #else call insert on root's right node 
+        pass
+        
+bt1 = BTNode(10) #root
+
+
+print(bt1.right.value, bt1.left.value)
