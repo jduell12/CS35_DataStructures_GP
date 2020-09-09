@@ -1,5 +1,7 @@
 # Data Structures Agenda
+
 ## Project Folders
+
 - Part 1 In Class: doubly_linked_list
 
 - Part 1 Homework: queue_and_stack
@@ -17,9 +19,11 @@
 - Part 4 Homework: binary_search_tree part 2
 
 ## Rationale behind the module
+
 The "best" data structure for the specific project or application you are working on will depend on its unique specification. During this sprint, we will be diving into how common operations (insertion, deletion, access, search, etc) work with different data structures. This will help us to understand when you might chose one data structure over another for different projects.
 
 ## Takeaways for the module
+
 This is what you should get out of this module.
 
 - General understanding of how we can utilize data structures such as an array, stack, queue, linked list, tree, and heap in Python
@@ -37,13 +41,22 @@ This is what you should get out of this module.
 - Talk About Queues
 - Wrap Up
 
-
 ## Day 2
+
 - Quick recap linked lists
 - Interview Prep: solve linked list problem
 - 5 min break
 - Queue and Stack Solution
-- More problem practice
 - 5 min break
-- More problems if time allows
+- More problem practice
+- wrap up
+
+## Day 3
+
+- Class Design (Review)
+- Linked List (Review)
+- 5 min break
+- Research Exercise - Binary Search Tree
+- 5 min break
+- Building Pseudo-code from research
 - wrap up
