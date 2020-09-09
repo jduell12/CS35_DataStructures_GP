@@ -70,7 +70,6 @@ class Vec2:
         self.x //= other.x
         self.y //= other.y 
 
-# reflect on the design & think of improvements
 
 v1 = Vec2(20, 10)
 v2 = Vec2(10, 10)
@@ -103,3 +102,15 @@ print('--------------------')
 
 # 2.
 # Linked Lists to trees
+"""
+Singly linked list
+(value) -> (value) ->()
+
+Doubly linked list
+<- (value) <--> (value) <-->()->
+
+Tree from DLL
+        (value)
+        /     \ 
+    (left)    (right)
+"""
