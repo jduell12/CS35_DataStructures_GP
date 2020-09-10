@@ -138,6 +138,18 @@ class BSTNode:
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
+    """
+    stack
+    grab the starting node and put it in the stack
+    if there are items in the stack
+        pop the current node
+        mark as visited 
+        print node's value
+    check left
+        push left
+    check right
+        push right 
+    """
     def dft_print(self):
         pass
 
