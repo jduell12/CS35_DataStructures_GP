@@ -134,6 +134,15 @@ class BSTNode:
         enqueue right 
     """
     def bft_print(self):
+        #create an empty queue
+        #enqueue starting node
+        #while the queue is not empty
+            #dequeue the current node
+            #print the node's value
+            #if left child
+                #enqueue left child
+            #if right child
+                #enqueue right child
         pass
 
     # Print the value of every node, starting with the given node,
@@ -151,6 +160,15 @@ class BSTNode:
         push right 
     """
     def dft_print(self):
+         #create an empty stack
+        #push starting node
+        #while the stack is not empty
+            #pop the current node
+            #print the node's value
+            #if left child
+                #push left child
+            #if right child
+                #push right child
         pass
 
     # Stretch Goals -------------------------
