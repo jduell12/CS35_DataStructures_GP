@@ -59,7 +59,7 @@ class BSTNode:
             # otherwise
             else:
                 # call contains on the left child
-                self.left.contains(target)
+                return self.left.contains(target)
         # right case
         # otherwise
         else:
@@ -70,7 +70,7 @@ class BSTNode:
             # otherwise
             else:
                 # call contains on the right child
-                self.right.contains(target)
+                return self.right.contains(target)
 
     # Return the maximum value found in the tree
     def get_max(self):
@@ -121,6 +121,18 @@ class BSTNode:
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
+    """
+    queue
+    grab starting node and put it in the queue
+    if there are items in the queue 
+        dequeue the current node
+            mark it as visited
+            print the node's value 
+    check left 
+        enqueue left
+    check right 
+        enqueue right 
+    """
     def bft_print(self):
         pass
 
