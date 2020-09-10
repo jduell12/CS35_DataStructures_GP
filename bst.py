@@ -18,20 +18,26 @@ class BSTNode:
     def insert(self, value):
         # left case?
         # check if the value is less than the root value?
+        if value < self.value:
             # move to the left and check if it is none?
+            if not self.left:
                 # insert node here
+                self.left = BSTNode(value)
             # otherwise
+            else:
                 # call insert on the root's left node
+                self.left.insert(value)
         # right case?
+        else:
         # otherwise
             # move to the right and check if it is none?
+            if not self.right:
                 # insert the node here
+                self.right = BSTNode(value)
             # otherwise
+            else:
                 # call insert on the root's right node
-
-
-        # other / base case
-        pass
+                self.right.insert(value)
 
     # Return True if the tree contains the value
     # False if it does not
@@ -39,29 +45,59 @@ class BSTNode:
         # base case?
         # check the root node value against target
         # if the root node's value and the target are the same
+        if self.value == target:
             # return True
+            return True 
         
         # left case
         # check if the target is less than the root's value
+        if target < self.value:
             # check if there is no child to the left
+            if not self.left:
                 # return False
+                return False 
             # otherwise
+            else:
                 # call contains on the left child
+                self.left.contains(target)
         # right case
         # otherwise
+        else:
             # check if there is no child to the right
+            if not self.right:
                 # return False
+                return False
             # otherwise
+            else:
                 # call contains on the right child
-        pass
+                self.right.contains(target)
 
     # Return the maximum value found in the tree
     def get_max(self):
-        pass
+        #base case 
+        #tree is empty return None
+        if not self:
+            return None
+        #while there is a right child 
+        while self.right:
+            #move to the right
+            self = self.right
+        
+        #return the self's value once there are no more right children
+        return self.value
+            
 
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
-        pass
+        #call for_each on the root 
+        fn(self.value)
+        #if left child exists then call for_each on left child
+        if self.left:
+            self.left.for_each(fn)
+        #if right child exists then call for_each on right child
+        if self.right:
+            self.right.for_each(fn)
+    
 
     # Part 2 -----------------------
 
