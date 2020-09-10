@@ -85,6 +85,19 @@ class BSTNode:
         
         #return the self's value once there are no more right children
         return self.value
+    
+    #Return the minimum value found in the tree
+    def get_min(self):
+        #base case 
+        #tree is empty return None
+        if not self:
+            return None
+        #while there is a left child
+        while self.left:
+            #move to the left
+            self = self.left
+        #return the self's value once there are no more left children
+        return self.value
             
 
     # Call the function `fn` on the value of each node
